@@ -1,7 +1,7 @@
 {
     "watch": ["./"],
     "ext": "ts",
-    "exec": "node ./dist/index.js", 
+    "exec": "node ./dist/index.js --inspect=0.0.0.0:9229", 
     "ignore": ["./**/*.spec.ts"]
   }
   

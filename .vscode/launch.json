@@ -5,15 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-node",
+            "name": "Docker: Attach to Node",
+            "type": "node",
             "request": "attach",
-            "name": "Attach To Docker",
             "port": 9229,
             "address": "localhost",
             "localRoot": "${workspaceFolder}",
-            "remoteRoot": "/usr/src/app",
-            "protocol": "inspector",
-            "skipFiles": ["<node_internals>/**"]
+            "remoteRoot": "/",
+            "protocol": "inspector"
         },
         {
             "type": "node",

@@ -24,4 +24,4 @@ RUN npx prisma generate
 EXPOSE 4000
 
 # Start the application using the transpiled JavaScript code
-CMD ["npm","run","dev"]
+CMD ["npm","start"]
