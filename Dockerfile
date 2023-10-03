@@ -4,8 +4,8 @@ FROM node:20
 # Set the working directory in the container
 WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json for efficient caching
-COPY package*.json ./
+# Copy package*.json, .env and the rest for efficient caching
+COPY package*.json .env ./
 
 # Install all dependencies (including devDependencies for building the project)
 RUN npm install
@@ -24,7 +24,7 @@ RUN npx prisma generate
 
 
 # Expose the port the app will run on
-EXPOSE 3000
+EXPOSE 4000
 
 # Start the application using the transpiled JavaScript code
 CMD ["npm", "start"]
