@@ -10,8 +10,4 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: "module",
   },
-  rules: {
-    // Add custom rules here
-    // e.g. "@typescript-eslint/explicit-function-return-type": "off",
-  },
 };

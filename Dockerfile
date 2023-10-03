@@ -16,9 +16,6 @@ COPY . .
 # Build the TypeScript project
 RUN npm run build
 
-# Remove devDependencies after building the project
-RUN npm prune --production
-
 # Run the migrations for prisma
 RUN npx prisma generate
 
@@ -27,4 +24,4 @@ RUN npx prisma generate
 EXPOSE 4000
 
 # Start the application using the transpiled JavaScript code
-CMD ["npm", "start"]
+CMD ["npm","run","dev"]

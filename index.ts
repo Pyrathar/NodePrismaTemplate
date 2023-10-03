@@ -7,10 +7,9 @@ const app: Express = express();
 
 // Middlewares
 app.use(bodyParser.json());
-
 app.use(
   cors({
-    origin: "*", // allows all origins. In production, you'd list specific origins, e.g., 'http://myfrontend.com'
+    origin: "*",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     preflightContinue: false,
     optionsSuccessStatus: 204,
